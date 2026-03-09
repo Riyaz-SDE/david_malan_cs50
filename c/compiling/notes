@@ -1,0 +1,6 @@
+PREPROCESSING  - the line starts with # then include is known as prepocessor
+COMPILING - it means translates from C to assembly.
+asssembling - it means assembly to binary code 
+linking - in your code it used other files like stdio.h for that,
+    it converts that file into assembly to binary and then linking to our code that
+    already converted into binary
