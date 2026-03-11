@@ -1,0 +1,9 @@
+selection sort
+    choose smallest element and swap it swap 
+    big(O) - n^2
+    best case n^2
+bubble sort
+    choose first two element compare and swap
+    big(O) n^2
+recursion ---
+merge sort
