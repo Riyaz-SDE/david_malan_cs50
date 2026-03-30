@@ -1,6 +1,15 @@
-print("hi")
-import cs50 from get_string()
+from cs50 import get_string
 
-input = get_string("what is your name")
+inputx = get_string("what is your name ")
+print(f'hi {inputx}')
 
-print(f'hi {input}')
+def printf(input,endline,sep):
+    print(input,end = endline,sep = sep)
+printf('riyaz', '----\t --- \n','*')
+
+def add2numm():
+    x = int(input("type : x")) 
+    y = int(input("type : y"))
+    print(x + y)
+    printf("sum of two num is", '\t finished ','*')
+add2numm()
