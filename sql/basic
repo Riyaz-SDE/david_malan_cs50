@@ -1,0 +1,20 @@
+INSERT CRATE UPADATE DELETE DROP SELECT
+AVG COUNT DISTINCT LOWER UPPER MIN MAX
+GROUP-BY ORDER-BY LIKE LIMIT WHERE
+
+DISTINCT vs GROUP BY
+
+schema design
+    shows - people - person
+    shows - id - title
+    people - id - name
+    person showid - personid
+
+IMDB SCHEMA design
+
+DATA TYPES - BLOB, INTEGER, NUMERIC, REAL, TEXT
+KEY for above this - not null, unique
+
+QUERYING - 
+    IN KEYWORD FOR nested quering
+    JOIN keyword    
