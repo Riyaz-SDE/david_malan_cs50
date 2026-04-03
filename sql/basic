@@ -17,4 +17,8 @@ KEY for above this - not null, unique
 
 QUERYING - 
     IN KEYWORD FOR nested quering
-    JOIN keyword    
+    JOIN keyword     
+
+- yet to completed
+    completed everything but 
+    need to work on querying, index and last section on sql video
