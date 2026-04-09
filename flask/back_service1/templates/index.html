@@ -1,4 +1,10 @@
 {% extends "layout.html" %}
 {% block body %}
-<h1> This your Html Body {{name}}</h1>
+<h1> This your Html Body 
+    {% if name %}
+        {{name }}   
+    {% else %}
+        world
+    {% endif %}
+</h1>
 {% endblock %}

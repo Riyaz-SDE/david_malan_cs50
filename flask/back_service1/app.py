@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request
 from blueprints.login.login import loginapi
+from blueprints.add_post.add_post import postApi
 app = Flask(__name__)
 app.register_blueprint(loginapi, url_prefix = '/login')
+app.register_blueprint(postApi, url_prefix = '/addpost')
 @app.route('/')
 
 def index():

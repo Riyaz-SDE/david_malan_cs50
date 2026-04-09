@@ -1,0 +1,17 @@
+frosh IM application
+-create form route:'/'
+    - schema: name-input, select:option
+-regsiter route:'/register' method='post'
+    - data validation using IF ELSE 
+    - client side validation
+    - two page will possibly returned
+    - failure.html or success.html
+- Create global variable for storing sports
+    -use that inside html page which is index.html
+- store the rgistrants in global variable and 
+    show it on fetch api
+
+
+==============
+after tha5t he create login logout mechanism
+and then shopping site
