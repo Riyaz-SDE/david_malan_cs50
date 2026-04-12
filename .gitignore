@@ -1,3 +1,17 @@
 *.exe
 *.csv
 *.db
+flask_session
+# virtual environment
+venv/
+env/
+.env
+.venv/
+# Python cache (compiled files)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Flask-specific
+instance/
+.webassets-cache
