@@ -2,7 +2,19 @@
 {% block body %}
 {% if session.name %}
     you are logged in {{session.name}}
+    <form action="/logout" method="POST">
+        <button type="submit" onclick="onSubmit">logout</button>
+    </form>
 {% else %}
-    you are not logged in
+    you are logged out 
+    <br>
+    pls login <a href="./login">login</a>
 {% endif %}
+<script>
+    const onSubmit = (e) => {
+         console.log('hi');
+         window.location.reload()
+         
+    }
+</script>
 {% endblock %}
