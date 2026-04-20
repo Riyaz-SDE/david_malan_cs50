@@ -1,0 +1,15 @@
+/register - sql query
+    # validate the data
+    # 1 user already exist or not 
+    # 2 username,password data format validation 
+    # 3 insert data into DB
+    {
+        new_user = User(name = username, password = password)
+        db.session.add(new_user)
+        db.session.commit()
+    }
+    # 4 session initiated session name is user
+/login -
+    # validate the data
+    # 1 username,password data format validation 
+    # lastly lookup data exist and then provide session

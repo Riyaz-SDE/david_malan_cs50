@@ -1,7 +1,7 @@
 {% extends 'layout.html' %}
 {% block body %}
-{% if session.name %}
-    you are logged in {{session.name}}
+{% if session.user %}
+    you are logged in {{session.user}}
     <form action="/logout" method="POST">
         <button type="submit" onclick="onSubmit">logout</button>
     </form>
@@ -12,6 +12,7 @@
 {% endif %}
 <script>
     const onSubmit = (e) => {
+        e.preventDefault()
          console.log('hi');
          window.location.reload()
          

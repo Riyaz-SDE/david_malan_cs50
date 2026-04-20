@@ -1,6 +1,0 @@
-user
-
-add_user (name, password)
-get_users
-
-

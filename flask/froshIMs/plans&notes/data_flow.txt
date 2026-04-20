@@ -1,0 +1,24 @@
+user
+
+add_user (name, password)
+get_users
+
+routes
+    user: completed
+        /register 
+        /login
+        /logout
+        /profile
+    product:
+        /product `
+        /add-product ~
+        /view-product-n
+        /get-user-products
+        /edit-product
+        /delete-product
+    review:
+        /add-review
+        /view-product-review
+    cart:
+        /add-cart-item
+        /remove-cart-item

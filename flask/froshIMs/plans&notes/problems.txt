@@ -1,0 +1,18 @@
+P-1
+    path:/models/models-line:3
+    i got problems when uses {..models .model }
+    error type: ImportError: attempted relative import beyond top-level package
+    so i solved it by using 'models.models'
+P-2
+    PATH: ap.py
+    got a problem with urlprefix
+    app.register_blueprint(loginb, url_prefix = "/K")
+    i thinked that was the problem but 
+    i for to take the url inside
+    @loginb.route('/url', methods = ["GET","POST"])
+
+p - 3
+    problem: issue while migrating db due to seperated the models from db
+    solved it by create ini.py by seperation app, db create function to create app
+    create app in app.py
+    
