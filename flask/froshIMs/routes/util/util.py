@@ -8,7 +8,7 @@ def checkFieldExist(request = request, *fields, method = None):
     #     return cond
     # if f():
     #     return 'invalid data'
-    if "user_name" not in request.form or "password" not in request.form :
+    if "username" not in request.form or "password" not in request.form :
         return 'invalid form data'
 def isDataNull(*data):
     for value in data:

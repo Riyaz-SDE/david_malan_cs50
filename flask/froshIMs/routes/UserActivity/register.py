@@ -7,7 +7,7 @@ def registerApi():
     if request.method == 'GET' :
         return render_template("register.html")
 
-    # validate the data
+    # 1.validate the data ------
     if "user_name" not in request.form or "password" not in request.form :
         return 'invalid form data'
     username = request.form['user_name']
@@ -19,7 +19,9 @@ def registerApi():
     existing_user = User.query.filter_by(name = username).first()
     if existing_user:
         return 'username already exist'
-    # 2 username,password data format validation 
+    # -------------------------------------------
+
+    # 2. username,password data format validation 
     # lastly insert data into DB
     new_user = User(name = username, password = password)
     db.session.add(new_user)
