@@ -10,6 +10,9 @@ from routes.UserActivity.logout import logoutRoute
 from routes.UserActivity.register import registerRoute
 from routes.profile.profileSearch import profileSearchRoute
 from routes.profile.registrants import registrantsRoute
+from routes.profile.feed import feedRoute
+from routes.profile.profile import profileRoute
+from routes.products.addProduct import addProductRoute
 from routes.products.products import productsRoute
 from routes.products.getProductById import productById
 from routes.products.getProductsOfUser import productsOfUser
@@ -40,9 +43,12 @@ app.register_blueprint(loginRoute, url_prefix = '/login')
 app.register_blueprint(logoutRoute, url_prefix = '/logout')
 app.register_blueprint(registerRoute, url_prefix = '/register')
 # get registrants and profile of user
+app.register_blueprint(feedRoute, url_prefix = '/feed')
+app.register_blueprint(profileRoute, url_prefix = '/profile')
 app.register_blueprint(registrantsRoute, url_prefix = '/registrants')
 app.register_blueprint(profileSearchRoute, url_prefix = '/profile/<username>')
 # post product and get product by it id or user name
+app.register_blueprint(addProductRoute, url_prefix = '/addproduct')
 app.register_blueprint(productsRoute, url_prefix = '/products')
 app.register_blueprint(productById, url_prefix = '/product/<int:id>')
 app.register_blueprint(productsOfUser, url_prefix = '/product/<username>')

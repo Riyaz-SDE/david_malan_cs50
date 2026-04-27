@@ -5,7 +5,7 @@ from flask_cors import cross_origin
 
 loginRoute = Blueprint('logiRoute',__name__)
 
-@loginRoute.route('', methods = ["GET","POST"])
+@loginRoute.route('', methods = ["GET","    "])
 @cross_origin(supports_credentials=True)
 def loginApi(): 
     
@@ -19,10 +19,11 @@ def loginApi():
         # query used to check credentials are true
         # select * from user where name = username and password = password
         isUser = User.query.filter_by(name = username, password = password).first()
-
+        print(isUser.id,'user details')
         # this will intiate session if user exist
+        userId = f'{isUser.id}'
         if isUser:
-            session['user'] = username+'-'+password
+            session['user'] = username+'-'+userId
             print('session intiated',session.get('user'))
             return jsonify({
                 'authenticated': True,
